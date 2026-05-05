@@ -147,13 +147,3 @@ curl "http://localhost:8000/search?q=citation%20governance&search_mode=hybrid&to
 curl -X POST http://localhost:8000/ask -H "Content-Type: application/json" -d '{"user_query":"How are citations governed?","top_k":3,"search_mode":"hybrid","access_level":"internal"}'
 ```
 
-## Resume Bullets
-
-- Built a governed enterprise RAG platform with FastAPI, SQLAlchemy, FAISS, hybrid search, deterministic mock AI providers, and citation-grounded answer generation.
-- Designed MCP-style internal tool interfaces for document search, code search, file reading, ticket creation, document summarization, and PR summary generation.
-- Implemented observability primitives including structured logs, trace IDs, audit logs, query logs, health checks, and operational metrics.
-- Shipped Docker Compose, CI, Streamlit UI, and pytest coverage for ingestion, search, tools, governance, and API workflows.
-
-## Interview Explanation
-
-The core design separates platform concerns: ingestion extracts and chunks knowledge, embeddings and vector storage are provider abstractions, hybrid search blends multiple retrieval signals, and the agent pipeline coordinates planning, retrieval, generation, evaluation, and governance. Mock providers make CI reliable, while OpenAI-compatible adapters demonstrate production extension points.

@@ -1,0 +1,1 @@
+Restricted acquisition plan

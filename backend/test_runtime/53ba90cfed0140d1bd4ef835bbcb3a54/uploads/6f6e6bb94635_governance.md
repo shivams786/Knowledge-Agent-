@@ -1,0 +1,1 @@
+Enterprise governance requires citation grounded answers and audit logs for every ask query. Hybrid search combines semantic and keyword ranking.
